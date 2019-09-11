@@ -4,10 +4,10 @@
 // and sets the encoding
 
 // The database access details are set as constants
-DEFINE ('DB_USER', 'username');
+DEFINE ('DB_USER', 'andrew');
 DEFINE ('DB_PASSWORD', 'password');
 DEFINE ('DB_HOST', 'localhost');
-DEFINE ('DB_NAME', 'mondaymashup');
+DEFINE ('DB_NAME', 'mondaymash');
 
 // Connect:
 $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR die
