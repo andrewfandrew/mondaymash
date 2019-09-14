@@ -3,6 +3,17 @@
 $page_title = 'Welcome to this Site!';
 include('includes/header.html');
 
+function my_autoloader($class) {
+  include 'classes/' . $class . '.class.php';
+
+}
+
+spl_autoload_register('my_autoloader');
+include('Test.php');
+
+$obj = new Test();
+$obj->output();
+
 ?>
 
 <div class="page-header"><h1>Content Header</h1></div>
